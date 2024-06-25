@@ -46,47 +46,48 @@ export default function Table() {
 
   return (
     <>
-      <div className="flex flex-col w-full h-full container-bg rounded-md px-0 py-5 gap-3 border-[1px] border-color">
-        <div className='flex flex-row justify-between items-center px-4 w-full'>
-          <Input
-            placeholder='Pesquisar'
-            type='text'
-            onChange={handleSearchChange}
-            Icon={Search}
-          />
-          <Button
-            text="Ordem Alfábetica"
-            onClick={handleSort}
-            Icon={isSorted ? AArrowDown : AArrowUp}
-          />
-        </div>
-        <table className="flex flex-col w-full h-full container-bg rounded-md px-0">
-          <thead className='w-full container-secondary p-2 px-6 border-y-[1px] border-color'>
-            <tr className="flex flex-row w-full justify-between text-tertiary ">
-              <th className="w-[20px] items-center text-center text-sm">Id</th>
-              <th className="w-[100px] items-center text-center text-sm">Data</th>
-              <th className="w-[150px] items-center text-center text-sm">Nome</th>
-              <th className="w-[100px] items-center text-center text-sm">CPF</th>
-              <th className="w-[200px] items-center text-center text-sm">Email</th>
-              <th className="w-[100px] items-center text-center text-sm">Valor total</th>
-              <th className="w-[200px] items-center text-center text-sm">Status</th>
-            </tr>
-          </thead>
-          <tbody>
-            {sortedData.map((item) => (
-              <tr key={item.id} className="flex flex-row w-full justify-between px-6 py-1 items-center border-b-[1px] border-color">
-                <td className="w-[20px] items-center text-center text-base text-tertiary">{item.id}</td>
-                <td className="w-[100px] items-center text-center text-base text-tertiary">{formatDate(item.data)}</td>
-                <td className="w-[150px] items-center text-center text-base text-tertiary">{item.cliente.nome}</td>
-                <td className="w-[150px] items-center text-center text-base text-tertiary">{formatCPF(item.cliente.cpf)}</td>
-                <td className="w-[200px] items-center text-center text-base text-tertiary">{item.cliente.email}</td>
-                <td className="w-[100px] items-center text-center text-base text-tertiary">{formatCurrency(item.valorTotal.toString())}</td>
-                <td className="w-[200px] items-center text-center text-base text-tertiary"><StatusCard status={item.status} /></td>
-              </tr>
-            ))}
-          </tbody>
-        </table>
-      </div>
+   <div className="flex flex-col w-full h-full container-bg rounded-md px-0 py-5 gap-3 border-[1px] border-color">
+  <div className='flex flex-row justify-between items-center px-4 w-full '>
+    <Input
+      placeholder='Pesquisar'
+      type='text'
+      onChange={handleSearchChange}
+      Icon={Search}
+    />
+    <Button
+      text="Ordem Alfábetica"
+      onClick={handleSort}
+      Icon={isSorted ? AArrowDown : AArrowUp}
+    />
+  </div>
+  <table className="flex flex-col w-full h-full container-bg rounded-md px-0">
+    <thead className='w-full container-secondary p-2 px-6 border-y-[1px] border-color'>
+      <tr className="flex flex-row w-full justify-between text-tertiary ">
+        <th className="w-[20px] items-center text-center text-sm hidden md:block">Id</th>
+        <th className="w-[100px] items-center text-center text-sm hidden md:block">Data</th>
+        <th className="w-[150px] items-center text-center text-sm">Nome</th>
+        <th className="w-[100px] items-center text-center text-sm hidden md:block">CPF</th>
+        <th className="w-[200px] items-center text-center text-sm hidden md:block">Email</th>
+        <th className="w-[100px] items-center text-center text-sm">Valor total</th>
+        <th className="w-[200px] items-center text-center text-sm">Status</th>
+      </tr>
+    </thead>
+    <tbody>
+      {sortedData.map((item) => (
+        <tr key={item.id} className="flex flex-row w-full justify-between px-6 py-1 items-center border-b-[1px] border-color">
+          <td className="w-[20px] items-center text-center text-base text-tertiary hidden md:block">{item.id}</td>
+          <td className="w-[100px] items-center text-center text-base text-tertiary hidden md:block">{formatDate(item.data)}</td>
+          <td className="w-[150px] items-center text-center text-base text-tertiary">{item.cliente.nome}</td>
+          <td className="w-[150px] items-center text-center text-base text-tertiary hidden md:block">{formatCPF(item.cliente.cpf)}</td>
+          <td className="w-[200px] items-center text-center text-base text-tertiary hidden md:block">{item.cliente.email}</td>
+          <td className="w-[100px] items-center text-center text-base text-tertiary">{formatCurrency(item.valorTotal.toString())}</td>
+          <td className="w-[200px] items-center text-center text-base text-tertiary"><StatusCard status={item.status} /></td>
+        </tr>
+      ))}
+    </tbody>
+  </table>
+</div>
+
     </>
   );
 }

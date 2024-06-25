@@ -9,7 +9,7 @@ interface InputProps {
 
 export default function Input({ placeholder, type, onChange, Icon }: InputProps) {
   return (
-    <div className='flex flex-row container-secondary items-center text-tertiary w-[300px] h-[auto] rounded-md p-2 border-color border-2 focus-within:border-[#805ad5]'>
+    <div className='flex flex-row container-secondary items-center text-tertiary w-[300px] h-[auto] rounded-md p-2 border-color border-2 focus-within:border-[#805ad5] mb-4 md:mb-0'>
       <div className='flex justify-center items-center'>
         {Icon && <Icon className="icon-color mr-2 items-center" />} 
       </div>

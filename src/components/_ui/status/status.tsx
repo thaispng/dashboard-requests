@@ -12,7 +12,7 @@ const StatusCard = ({ status }: { status: string }) => {
 
   return (
     <div className={`p-2 rounded-lg ${bg} my-1 border-[1px] border-color`}>
-      <p className={`font-base text-sm ${text} ${fontWeight}`}>{status}</p>
+      <p className={`font-base text-sm md:text-base ${text} ${fontWeight}`}>{status}</p>
     </div>
   );
 };
