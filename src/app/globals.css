@@ -13,8 +13,9 @@
   --container-primary: 250, 250, 250;
   --container-secondary: 226, 232, 240, 0.4;
   --border-color: 226, 232, 240;
-  --button: 219, 234, 254;
-  --color-hover: 191, 219, 254;
+  --button-primary: 226, 232, 240, 0.4;
+  --button-hover: 235, 232, 238;
+  --icon-color: 226, 232, 240, 1.8;
 }
 
 [data-theme="dark"] {
@@ -28,8 +29,9 @@
   --container-primary: 18, 18, 18;
   --container-secondary: 28, 28, 28;
   --border-color: 35, 35, 35;
-  --button: 36, 36, 36;
-  --color-hover: 0, 0, 0;
+  --button-primary: 28, 28, 28;
+  --button-hover: 37, 31, 43;
+  --icon-color: 28, 28, 28;
 }
 
 body {
@@ -43,8 +45,8 @@ body {
   background-color: rgb(var(--container-primary));
 }
 
-.container-secondary {
-  background-color: rgb(var(--container-secondary));
+.icon-color {
+  color: rgb(var(--icon-color));
 }
 
 .bg-primary {
@@ -70,11 +72,11 @@ body {
   color: rgb(var(--text-tertiary));
 }
 
-.button {
-  background-color: rgb(var(--button));
+.button-primary {
+  background-color: rgb(var(--button-primary));
 }
-.button:hover {
-  background-color: rgb(var(--color-hover));
+.button-primary:hover {
+  background-color: rgb(var(--button-hover));
 }
 
 @layer utilities {

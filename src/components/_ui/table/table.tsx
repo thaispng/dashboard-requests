@@ -63,13 +63,13 @@ export default function Table() {
         <table className="flex flex-col w-full h-full container-bg rounded-md px-0">
           <thead className='w-full container-secondary p-2 px-6 border-y-[1px] border-color'>
             <tr className="flex flex-row w-full justify-between text-tertiary ">
-              <th className="w-[20px] items-center text-center text-sm">id</th>
-              <th className="w-[100px] items-center text-center text-sm">data</th>
-              <th className="w-[150px] items-center text-center text-sm">nome</th>
-              <th className="w-[100px] items-center text-center text-sm">cpf</th>
-              <th className="w-[200px] items-center text-center text-sm">email</th>
-              <th className="w-[100px] items-center text-center text-sm">valor Total</th>
-              <th className="w-[200px] items-center text-center text-sm">status</th>
+              <th className="w-[20px] items-center text-center text-sm">Id</th>
+              <th className="w-[100px] items-center text-center text-sm">Data</th>
+              <th className="w-[150px] items-center text-center text-sm">Nome</th>
+              <th className="w-[100px] items-center text-center text-sm">CPF</th>
+              <th className="w-[200px] items-center text-center text-sm">Email</th>
+              <th className="w-[100px] items-center text-center text-sm">Valor total</th>
+              <th className="w-[200px] items-center text-center text-sm">Status</th>
             </tr>
           </thead>
           <tbody>
