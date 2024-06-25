@@ -1,0 +1,248 @@
+[
+    {
+      "id": 1,
+      "data": "2024-06-20",
+      "valorTotal": 99.9,
+      "produtos": [
+        {
+          "nome": "Meia",
+          "valor": 20
+        },
+        {
+          "nome": "Tênis",
+          "valor": 79.9
+        }
+      ],
+      "cliente": {
+        "nome": "Lucas Alberto",
+        "email": "lucasalberto@gmail.com",
+        "cpf": "00000000000"
+      },
+      "status": "Rastreio e nota enviados"
+    },
+    {
+      "id": 2,
+      "data": "2024-06-20",
+      "valorTotal": 39.9,
+      "produtos": [
+        {
+          "nome": "Colar",
+          "valor": 39.9
+        }
+      ],
+      "cliente": {
+        "nome": "Maria Fernanda",
+        "email": "mariafernanda@gmail.com",
+        "cpf": "11111111111"
+      },
+      "status": "Problema na entrega"
+    },
+    {
+      "id": 3,
+      "data": "2024-06-15",
+      "valorTotal": 199.8,
+      "produtos": [
+        {
+          "nome": "Tênis Adidas",
+          "valor": 99.9
+        },
+        {
+          "nome": "Tênis Nike",
+          "valor": 99.9
+        }
+      ],
+      "cliente": {
+        "nome": "Felipe Ferreira",
+        "email": "felipeferreira@gmail.com",
+        "cpf": "22222222222"
+      },
+      "status": "Confirmação de Entrega"
+    },
+    {
+      "id": 4,
+      "data": "2024-06-15",
+      "valorTotal": 29.9,
+      "produtos": [
+        {
+          "nome": "Pulseira",
+          "valor": 29.9
+        }
+      ],
+      "cliente": {
+        "nome": "Vanessa Souza",
+        "email": "vanessasouza@gmail.com",
+        "cpf": "33333333333"
+      },
+      "status": "Reembolso solicitado"
+    },
+    {
+      "id": 5,
+      "data": "2024-06-18",
+      "valorTotal": 49.9,
+      "produtos": [
+        {
+          "nome": "Cinto",
+          "valor": 49.9
+        }
+      ],
+      "cliente": {
+        "nome": "Rafael Silva",
+        "email": "rafaelsilva@gmail.com",
+        "cpf": "44444444444"
+      },
+      "status": "Rastreio e nota enviados"
+    },
+    {
+      "id": 6,
+      "data": "2024-06-17",
+      "valorTotal": 89.9,
+      "produtos": [
+        {
+          "nome": "Boné",
+          "valor": 89.9
+        }
+      ],
+      "cliente": {
+        "nome": "Ana Clara",
+        "email": "anaclara@gmail.com",
+        "cpf": "55555555555"
+      },
+      "status": "Problema na entrega"
+    },
+    {
+      "id": 7,
+      "data": "2024-06-19",
+      "valorTotal": 109.9,
+      "produtos": [
+        {
+          "nome": "Mochila",
+          "valor": 109.9
+        }
+      ],
+      "cliente": {
+        "nome": "Bruno Costa",
+        "email": "brunocosta@gmail.com",
+        "cpf": "66666666666"
+      },
+      "status": "Confirmação de Entrega"
+    },
+    {
+      "id": 8,
+      "data": "2024-06-16",
+      "valorTotal": 19.9,
+      "produtos": [
+        {
+          "nome": "Caneca",
+          "valor": 19.9
+        }
+      ],
+      "cliente": {
+        "nome": "Isabela Ribeiro",
+        "email": "isabelaribeiro@gmail.com",
+        "cpf": "77777777777"
+      },
+      "status": "Reembolso solicitado"
+    },
+    {
+      "id": 9,
+      "data": "2024-06-21",
+      "valorTotal": 59.9,
+      "produtos": [
+        {
+          "nome": "Carteira",
+          "valor": 59.9
+        }
+      ],
+      "cliente": {
+        "nome": "João Pedro",
+        "email": "joaopedro@gmail.com",
+        "cpf": "88888888888"
+      },
+      "status": "Rastreio e nota enviados"
+    },
+    {
+      "id": 10,
+      "data": "2024-06-14",
+      "valorTotal": 299.9,
+      "produtos": [
+        {
+          "nome": "Jaqueta",
+          "valor": 299.9
+        }
+      ],
+      "cliente": {
+        "nome": "Carla Mendes",
+        "email": "carlamendes@gmail.com",
+        "cpf": "99999999999"
+      },
+      "status": "Problema na entrega"
+    },
+    {
+      "id": 11,
+      "data": "2024-06-13",
+      "valorTotal": 39.9,
+      "produtos": [
+        {
+          "nome": "Chaveiro",
+          "valor": 39.9
+        }
+      ],
+      "cliente": {
+        "nome": "Mariana Lima",
+        "email": "marianalima@gmail.com",
+        "cpf": "10101010101"
+      },
+      "status": "Confirmação de Entrega"
+    },
+    {
+      "id": 12,
+      "data": "2024-06-12",
+      "valorTotal": 79.9,
+      "produtos": [
+        {
+          "nome": "Fone de Ouvido",
+          "valor": 79.9
+        }
+      ],
+      "cliente": {
+        "nome": "Diego Martins",
+        "email": "diegomartins@gmail.com",
+        "cpf": "12121212121"
+      },
+      "status": "Reembolso solicitado"
+    },
+    {
+      "id": 13,
+      "data": "2024-06-11",
+      "valorTotal": 69.9,
+      "produtos": [
+        {
+          "nome": "Gorro",
+          "valor": 69.9
+        }
+      ],
+      "cliente": {
+        "nome": "Larissa Alves",
+        "email": "larissaalves@gmail.com",
+        "cpf": "13131313131"
+      },
+      "status": "Rastreio e nota enviados"
+    },
+    {
+      "id": 14,
+      "data": "2024-06-10",
+      "valorTotal": 99.9,
+      "produtos": [
+        {
+          "nome": "Relógio",
+          "valor": 99.9
+        }
+      ],
+      "cliente": {
+        "nome": "Ricardo Duarte",
+        "email": "ricardoduarte@gmail.com",
+        "cpf": "14141414141"
+      },
+      "status": "Problema na entrega"
+    }
+  ]
