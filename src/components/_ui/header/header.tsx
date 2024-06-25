@@ -20,7 +20,7 @@ export default function Header() {
   };
 
   return (
-    <header className="fixed w-full flex flex-row justify-end items-center p-4  h-[43px] bg-primary">
+    <header className="w-full flex flex-row justify-end items-center p-4 h-[43px]">
       <div className="flex items-center">
         <button className="text-neutral-500 hover:text-neutral-400" onClick={handle}>
           {theme === 'light' ? <Moon size={24} /> : <Sun size={24} />}

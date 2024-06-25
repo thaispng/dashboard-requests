@@ -61,12 +61,12 @@ export default function Dash() {
 
   return (
     <>
-      <div className="pt-8 w-full max-w-10xl">
-        <h1 className="text-2xl font-semibold text-primary dark:text-foreground my-1">
+      <div className=" w-full max-w-10xl">
+        <h1 className="text-2xl font-semibold text-primary ">
           Dashboard
         </h1>
       </div>
-      <div className="flex flex-row w-full justify-start gap-4">
+      <div className="flex flex-row w-full justify-between gap-4">
         <MetricCard 
           icon={<TrendingUp size={24} color="#fff" strokeWidth={1.5} />} 
           value={`$${totalValue.toFixed(2)}`} 
@@ -88,39 +88,39 @@ export default function Dash() {
           label="Taxa de Reembolso" 
         />
       </div>
-      <div className="flex flex-col w-full container-bg justify-start p-4 items-center shadow-sm gap-2 rounded-md">
+      <div className="flex flex-col w-full container-bg justify-start p-4 items-center shadow-sm gap-2 rounded-md border-[1px] border-color">
         <div className="flex flex-col w-full">
-          <h1 className="flex justify-start w-full font-semibold text-xl text-tertiary">
+          <h1 className="flex justify-start w-full font-semibold text-xl text-primary">
             Status
           </h1>
           <h1 className="flex justify-start w-full font-base text-sm text-tertiary">
             Monitore o status de entrega de todos os pedidos em tempo real
           </h1>
         </div>
-        <div className="flex flex-row w-full">
+        <div className="flex flex-row w-full justify-between gap-4">
           <StatusCard 
-            icon={<FileBox size={24} color="#fff" strokeWidth={1.5} />} 
+            icon={<FileBox size={24} color="#3b82f6" strokeWidth={1.5} />} 
             label="Rastreio e nota enviados" 
             value={deliveryStatus} 
-            color="#3b82f6" 
+            color="#CADEFF" 
           />
           <StatusCard 
-            icon={<PackageX size={24} color="#fff" strokeWidth={1.5} />} 
+            icon={<PackageX size={24} color="#ef4444" strokeWidth={1.5} />} 
             label="Problema na entrega" 
             value={deliveryProblem} 
-            color="#ef4444" 
+            color="#FFD5D5" 
           />
           <StatusCard 
-            icon={<PackageCheck size={24} color="#fff" strokeWidth={1.5} />} 
+            icon={<PackageCheck size={24} color="#22c55e" strokeWidth={1.5} />} 
             label="Confirmação de Entrega" 
             value={deliveryConfirmation} 
-            color="#22c55e" 
+            color="#C5FFD5" 
           />
           <StatusCard 
-            icon={<PackageCheck size={24} color="#fff" strokeWidth={1.5} />} 
+            icon={<PackageCheck size={24} color="#eab308" strokeWidth={1.5} />} 
             label="Reembolso solicitado" 
             value={refundRequested} 
-            color="#eab308" 
+            color="#FFEFD5" 
           />
         </div>
       </div>
@@ -129,15 +129,15 @@ export default function Dash() {
 }
 
 const MetricCard = ({ icon, value, label }: { icon: React.ReactNode, value: string | number, label: string }) => (
-  <div className="flex flex-col w-[300px] h-[auto] container-bg justify-start p-4 items-center shadow-sm gap-2 rounded-md">
+  <div className="flex flex-col w-[25%] h-[auto] container-bg justify-start p-4 items-center shadow-sm gap-2 rounded-md border-[1px] border-color">
     <div className="flex flex-row w-full justify-start gap-2 items-center">
       <div className=" w-[auto] bg-[#805ad5] p-2 rounded-lg shadow-md items-center ">
         {icon}
       </div>
     </div>
-    <h3 className="text-2xl font-semibold text-primary dark:text-foreground my-1 text-start w-full">
+    <h3 className="text-2xl font-semibold text-secondary  my-1 text-start w-full">
       {value}
-      <h2 className="text-sm font-semibold text-tertiary my-1 text-start w-full">
+      <h2 className="text-sm font-normal text-tertiary my-1 text-start w-full">
         {label}
       </h2>
     </h3>
@@ -145,9 +145,9 @@ const MetricCard = ({ icon, value, label }: { icon: React.ReactNode, value: stri
 );
 
 const StatusCard = ({ icon, label, value, color }: { icon: React.ReactNode, label: string, value: string | number, color: string }) => (
-  <div className="flex flex-col w-[300px] h-[auto] justify-start items-center">
-    <div className="flex flex-row w-full justify-start gap-2 items-center">
-      <div className=" w-[auto] p-2 rounded-lg shadow-md items-center" style={{ backgroundColor: color }}>
+  <div className="flex flex-col w-[25%] h-[auto] justify-start items-start container-secondary rounded-md px-2 py-1 border-[1px] border-color ">
+    <div className="flex flex-row w-[auto] px-4 rounded-md justify-start gap-2 items-center  ">
+      <div className=" w-[auto] p-2 rounded-lg border-[1px] border-color items-center" style={{ backgroundColor: color }}>
         {icon}
       </div>
       <div>

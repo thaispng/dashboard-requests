@@ -5,39 +5,46 @@
 :root {
   --foreground-rgb: 128, 90, 213;
   --background-rgb: 250, 250, 250;
-  --primary-rgb: 250, 250, 250; 
-  --secondary-rgb: 47, 47, 47; 
-  --text-primary: 120, 91, 184;
-  --text-secondary: 10, 10, 10;
+  --primary-rgb: 239, 239, 239;
+  --secondary-rgb: 47, 47, 47;
+  --text-primary: 0, 0, 0;
+  --text-secondary: 128, 90, 213;
   --text-tertiary: 75, 75, 75;
-  --container-primary: 243, 244, 246;
+  --container-primary: 250, 250, 250;
+  --container-secondary: 226, 232, 240, 0.4;
+  --border-color: 226, 232, 240;
   --button: 219, 234, 254;
   --color-hover: 191, 219, 254;
 }
 
 [data-theme="dark"] {
   --foreground-rgb: 128, 90, 213;
-  --background-rgb: 18, 18, 18; 
-  --primary-rgb: 0, 0, 0; 
-  --secondary-rgb: 39, 39, 39; 
-  --text-primary: 128, 90, 213;
-  --text-secondary: 240, 240, 240;
-  --text-tertiary: 195, 195, 195;
+  --background-rgb: 18, 18, 18;
+  --primary-rgb: 0, 0, 0;
+  --secondary-rgb: 39, 39, 39;
+  --text-primary: 255, 255, 255;
+  --text-secondary: 128, 90, 213;
+  --text-tertiary: 170, 170, 170;
   --container-primary: 18, 18, 18;
-  --button: 36,36,36;
+  --container-secondary: 28, 28, 28;
+  --border-color: 35, 35, 35;
+  --button: 36, 36, 36;
   --color-hover: 0, 0, 0;
 }
 
 body {
   background-color: rgb(var(--primary-rgb));
-  color: rgb(var(--foreground-rgb));
   width: 100%;
   height: 100%;
   margin: 0;
 }
 
-.container-bg{
+.container-bg {
   background-color: rgb(var(--container-primary));
+}
+
+.container-secondary {
+  background-color: rgb(var(--container-secondary));
 }
 
 .bg-primary {
@@ -47,9 +54,12 @@ body {
 .bg-secondary {
   background-color: rgb(var(--secondary-rgb));
 }
+.border-color {
+  border-color: rgb(var(--border-color));
+}
 
 .text-primary {
-  color: rgb(var(---text-primary))
+  color: rgb(var(--text-primary));
 }
 
 .text-secondary {
@@ -60,11 +70,10 @@ body {
   color: rgb(var(--text-tertiary));
 }
 
-.button{
+.button {
   background-color: rgb(var(--button));
-  
 }
-.button:hover{
+.button:hover {
   background-color: rgb(var(--color-hover));
 }
 
